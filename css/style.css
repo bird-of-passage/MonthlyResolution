@@ -24,6 +24,96 @@ Author: Christopher Castig | @castig
 /*----------------------------------------------------------------------------- 
 02=LAYOUT  
 -----------------------------------------------------------------------------*/
+h1,h6{
+     margin: 0px;
+}
+
+h1{
+     display: block;
+     width: 400px;
+}
+
+/* Solid border */
+hr.solid {
+     border-top: 1px solid #bbb;
+   }
+   
+
+#container{
+     width: 1000px;
+     margin: 0 auto;
+}
+
+#header{
+     background: silver;
+     padding: 50px;
+}
+
+#main{
+     background: whitesmoke;
+     padding: 50px;
+     width: 700px;
+     float: left;
+     border: 1px;
+
+}
+
+#sidebar{
+     background: whitesmoke;
+     width: 300px;
+     height: 88.5rem;
+     float: left;
+     padding: 50px;
+     border-left: 5px #bbb solid;
+}
+
+.profile{
+     border-radius: 50%;
+     
+}
+
+
+
+/*--------------------------------------------------------------------------------
+Quotation
+---------------------------------------------------------------------------------*/
+blockquote {
+     text-indent: -0.45em;
+     border-left: 5px solid seashell;
+   }
+   @supports ( hanging-punctuation: first) {
+     blockquote {
+       text-indent: 0;
+       hanging-punctuation: first;
+     }
+   }
+   
+   blockquote::before {
+       content: open-quote;
+   }
+   blockquote::after {
+       content: close-quote;
+   }
+   blockquote {
+       quotes: "“" "”" "‘" "’";
+   }
+
+   /*----------------------------------------------------------------------*/
+
+
+
+#footer{
+     background: peachpuff;
+     padding: 10rem;
+     float: bottom;
+
+}
+
+
+
+
+
+
 
 /*----------------------------------------------------------------------------- 
 03=MAIN  
